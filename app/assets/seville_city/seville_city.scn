@@ -1,0 +1,638 @@
+{
+	"Scene": {
+		"Components": {
+			"Environment": {
+				"AmbientColor": {
+					"b": 0.0667,
+					"g": 0.0667,
+					"r": 0.0667
+				},
+				"FogColor": {
+					"b": 1.0,
+					"g": 1.0,
+					"r": 1.0
+				}
+			}
+		},
+		"Nodes": {
+			"Node": {
+				"Uid": 1,
+				"Name": "map",
+				"Components": {
+					"Transform": {},
+					"Object": {
+						"Geometry": "assets/seville_city/map.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 2,
+				"Name": "house_28",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -2.6482,
+							"y": 0.0,
+							"z": -27.2931
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_28.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 3,
+				"Name": "house_27",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -23.4228,
+							"y": 0.0,
+							"z": -38.7039
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_27.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 4,
+				"Name": "house_26",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 5.2924,
+							"y": 0.0,
+							"z": -45.1514
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_26.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 5,
+				"Name": "house_25",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -51.5773,
+							"y": 0.0,
+							"z": -36.6409
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_25.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 6,
+				"Name": "house_24",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -35.1334,
+							"y": 0.0,
+							"z": -48.81
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": -0.0443,
+							"z": 0.0001
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_24.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 7,
+				"Name": "house_23",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -97.4554,
+							"y": 0.0,
+							"z": -24.4132
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_23.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 8,
+				"Name": "house_22",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -96.6408,
+							"y": 0.0,
+							"z": -59.2977
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_22.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 9,
+				"Name": "house_21",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 74.8292,
+							"y": 0.0,
+							"z": 37.773
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_21.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 10,
+				"Name": "house_20",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 91.9105,
+							"y": 0.0,
+							"z": 46.1926
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_20.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 11,
+				"Name": "house_19",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 127.7668,
+							"y": 0.0,
+							"z": 42.5545
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_19.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 12,
+				"Name": "house_18",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 167.5891,
+							"y": 0.0,
+							"z": 32.4451
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_18.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 13,
+				"Name": "house_17",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 185.2121,
+							"y": 0.0,
+							"z": 39.0025
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_17.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 14,
+				"Name": "house_16",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 197.5342,
+							"y": 0.0,
+							"z": -62.2225
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_16.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 15,
+				"Name": "house_15",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 209.0295,
+							"y": 0.0,
+							"z": -29.7653
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_15.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 16,
+				"Name": "house_14",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -134.2716,
+							"y": 0.0,
+							"z": -65.5448
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_14.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 17,
+				"Name": "house_13",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -144.994,
+							"y": 0.0,
+							"z": -91.7232
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_13.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 18,
+				"Name": "house_12",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -148.375,
+							"y": 0.0,
+							"z": -32.3148
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_12.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 19,
+				"Name": "house_11",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -140.3572,
+							"y": 0.0,
+							"z": -36.6617
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_11.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 20,
+				"Name": "house_10",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -171.4622,
+							"y": 0.0,
+							"z": -30.7691
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_10.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 21,
+				"Name": "house_09",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -197.2543,
+							"y": 0.0,
+							"z": -33.2807
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_09.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 22,
+				"Name": "house_08",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -114.7583,
+							"y": 0.0,
+							"z": 26.9973
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_08.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 23,
+				"Name": "house_07",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -145.477,
+							"y": 0.0,
+							"z": 21.008
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_07.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 24,
+				"Name": "house_06",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -145.6701,
+							"y": 0.0,
+							"z": 56.3634
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_06.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 25,
+				"Name": "house_05",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -166.8804,
+							"y": 0.0,
+							"z": 55.0859
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_05.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 26,
+				"Name": "house_04",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -166.8804,
+							"y": 0.0,
+							"z": 30.8394
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_04.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 27,
+				"Name": "house_03",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -195.1358,
+							"y": 0.0,
+							"z": 34.2687
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_03.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 28,
+				"Name": "house_02",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -193.0588,
+							"y": 0.0,
+							"z": 46.1021
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_02.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 29,
+				"Name": "house_01",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -73.579,
+							"y": 0.0,
+							"z": -63.7902
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_01.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 30,
+				"Name": "Camera001",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 1.6715,
+							"y": 8.8943,
+							"z": -18.9538
+						},
+						"Rotation": {
+							"x": 0.5355,
+							"y": -0.6147,
+							"z": 0.0
+						},
+						"Scale": {
+							"x": 1.0,
+							"y": 1.0,
+							"z": 1.0
+						}
+					},
+					"Camera": {
+						"ZFar": 50000.0,
+						"ZNear": 0.1001,
+						"ZoomFactor": 1.2722
+					}
+				}
+			},
+			"Node": {
+				"Uid": 31,
+				"Name": "house_00",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -2.5209,
+							"y": 0.0,
+							"z": -20.7917
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_00.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 32,
+				"Name": "telegraph_pole",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 45.7874,
+							"y": 0.0,
+							"z": 3.9736
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/telegraph_pole.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 33,
+				"Name": "telegraph_pole001",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -19.899,
+							"y": 0.0,
+							"z": 3.9736
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/telegraph_pole001.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 34,
+				"Name": "telegraph_pole002",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -90.5525,
+							"y": 0.0,
+							"z": 3.9736
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/telegraph_pole002.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 35,
+				"Name": "telegraph_pole003",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -153.7102,
+							"y": 0.0,
+							"z": 3.9736
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/telegraph_pole003.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 36,
+				"Name": "telegraph_pole004",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 122.8928,
+							"y": 0.0,
+							"z": 3.9736
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/telegraph_pole004.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 37,
+				"Name": "police_car",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -3.4783,
+							"y": 0.1941,
+							"z": -2.8125
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/police_car.geo"
+					}
+				}
+			}
+		},
+		"NodeHierarchy": {},
+		"Skeletons": {},
+		"State": {
+			"CurrentCamera": {
+				"Uid": 30
+			}
+		},
+		"Takes": {
+			"Take": {
+				"Name": "Take 001",
+				"Start": 0,
+				"End": 3333,
+				"Animations": {}
+			}
+		}
+	}
+}

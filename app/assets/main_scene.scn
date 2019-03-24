@@ -1,0 +1,96 @@
+{
+	"Scene": {
+		"Components": {
+			"Environment": {
+				"AmbientColor": {
+					"b": 0.1416,
+					"g": 0.0991,
+					"r": 0.0614
+				},
+				"BackgroundColor": {
+					"b": 0.3009,
+					"g": 0.1769,
+					"r": 0.1212
+				},
+				"FogColor": {
+					"b": 0.3009,
+					"g": 0.1769,
+					"r": 0.1212
+				},
+				"FogFar": 200.0,
+				"FogNear": 100.0
+			}
+		},
+		"Nodes": {
+			"Node": {
+				"Uid": 1,
+				"DoNotInstantiate": true,
+				"Name": "_default_camera",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -22.3546,
+							"y": 14.3081,
+							"z": -27.9989
+						},
+						"Rotation": {
+							"x": 0.2827,
+							"y": 0.9646,
+							"z": -0.0
+						},
+						"Scale": {
+							"x": 1.0,
+							"y": 1.0,
+							"z": 1.0
+						}
+					},
+					"Camera": {
+						"ZFar": 50000.0,
+						"ZNear": 0.1001
+					}
+				}
+			},
+			"Node": {
+				"Uid": 2,
+				"Name": "Light",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -7.057,
+							"y": 7.3668,
+							"z": -1.703
+						},
+						"Rotation": {
+							"x": 1.5708,
+							"y": -0.0,
+							"z": 0.0001
+						}
+					},
+					"Light": {
+						"Model": "Spot",
+						"Shadow": "ShadowMap",
+						"ShadowRange": 0.0
+					}
+				}
+			},
+			"Node": {
+				"Uid": 3,
+				"Name": "Instance",
+				"Components": {
+					"Transform": {},
+					"Instance": {
+						"Path": "assets/seville_city/seville_city.scn"
+					}
+				}
+			}
+		},
+		"NodeHierarchy": {},
+		"Skeletons": {},
+		"State": {
+			"CurrentCamera": {
+				"Uid": 1
+			}
+		},
+		"Takes": {}
+	}
+}
