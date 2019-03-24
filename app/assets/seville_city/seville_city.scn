@@ -19,7 +19,13 @@
 				"Uid": 1,
 				"Name": "map",
 				"Components": {
-					"Transform": {},
+					"Transform": {
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					},
 					"Object": {
 						"Geometry": "assets/seville_city/map.geo"
 					}
@@ -31,9 +37,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -2.6482,
+							"x": -2.6483,
 							"y": 0.0,
 							"z": -27.2931
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -47,9 +58,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -23.4228,
+							"x": -23.4229,
 							"y": 0.0,
-							"z": -38.7039
+							"z": -38.704
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -66,6 +82,11 @@
 							"x": 5.2924,
 							"y": 0.0,
 							"z": -45.1514
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -81,7 +102,12 @@
 						"Position": {
 							"x": -51.5773,
 							"y": 0.0,
-							"z": -36.6409
+							"z": -36.641
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -95,13 +121,13 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -35.1334,
+							"x": -35.1335,
 							"y": 0.0,
 							"z": -48.81
 						},
 						"Rotation": {
 							"x": -0.0,
-							"y": -0.0443,
+							"y": -0.0444,
 							"z": 0.0001
 						}
 					},
@@ -116,9 +142,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -97.4554,
+							"x": -97.4555,
 							"y": 0.0,
-							"z": -24.4132
+							"z": -24.4133
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -132,9 +163,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -96.6408,
+							"x": -96.6409,
 							"y": 0.0,
-							"z": -59.2977
+							"z": -59.2978
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -148,9 +184,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": 74.8292,
+							"x": 74.8291,
 							"y": 0.0,
 							"z": 37.773
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -166,7 +207,12 @@
 						"Position": {
 							"x": 91.9105,
 							"y": 0.0,
-							"z": 46.1926
+							"z": 46.1925
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -180,9 +226,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": 127.7668,
+							"x": 127.7667,
 							"y": 0.0,
-							"z": 42.5545
+							"z": 42.5544
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -199,6 +250,11 @@
 							"x": 167.5891,
 							"y": 0.0,
 							"z": 32.4451
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -215,6 +271,11 @@
 							"x": 185.2121,
 							"y": 0.0,
 							"z": 39.0025
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -230,7 +291,12 @@
 						"Position": {
 							"x": 197.5342,
 							"y": 0.0,
-							"z": -62.2225
+							"z": -62.2226
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -247,6 +313,11 @@
 							"x": 209.0295,
 							"y": 0.0,
 							"z": -29.7653
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -262,7 +333,12 @@
 						"Position": {
 							"x": -134.2716,
 							"y": 0.0,
-							"z": -65.5448
+							"z": -65.5449
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -276,9 +352,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -144.994,
+							"x": -144.9941,
 							"y": 0.0,
-							"z": -91.7232
+							"z": -91.7233
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -295,6 +376,11 @@
 							"x": -148.375,
 							"y": 0.0,
 							"z": -32.3148
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -308,9 +394,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -140.3572,
+							"x": -140.3573,
 							"y": 0.0,
 							"z": -36.6617
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -324,9 +415,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -171.4622,
+							"x": -171.4623,
 							"y": 0.0,
-							"z": -30.7691
+							"z": -30.7692
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -342,7 +438,12 @@
 						"Position": {
 							"x": -197.2543,
 							"y": 0.0,
-							"z": -33.2807
+							"z": -33.2808
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -356,9 +457,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -114.7583,
+							"x": -114.7584,
 							"y": 0.0,
-							"z": 26.9973
+							"z": 26.9972
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -375,6 +481,11 @@
 							"x": -145.477,
 							"y": 0.0,
 							"z": 21.008
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -388,9 +499,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -145.6701,
+							"x": -145.6702,
 							"y": 0.0,
-							"z": 56.3634
+							"z": 56.3633
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -404,9 +520,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -166.8804,
+							"x": -166.8805,
 							"y": 0.0,
-							"z": 55.0859
+							"z": 55.0858
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -420,9 +541,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -166.8804,
+							"x": -166.8805,
 							"y": 0.0,
-							"z": 30.8394
+							"z": 30.8393
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -438,7 +564,12 @@
 						"Position": {
 							"x": -195.1358,
 							"y": 0.0,
-							"z": 34.2687
+							"z": 34.2686
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -452,9 +583,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -193.0588,
+							"x": -193.0589,
 							"y": 0.0,
-							"z": 46.1021
+							"z": 46.102
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -470,7 +606,12 @@
 						"Position": {
 							"x": -73.579,
 							"y": 0.0,
-							"z": -63.7902
+							"z": -63.7903
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -484,24 +625,19 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": 1.6715,
-							"y": 8.8943,
-							"z": -18.9538
+							"x": 1.1321,
+							"y": 3.5929,
+							"z": -1.8529
 						},
 						"Rotation": {
-							"x": 0.5355,
-							"y": -0.6147,
-							"z": 0.0
-						},
-						"Scale": {
-							"x": 1.0,
-							"y": 1.0,
-							"z": 1.0
+							"x": 0.3404,
+							"y": -2.1554,
+							"z": -0.0
 						}
 					},
 					"Camera": {
 						"ZFar": 50000.0,
-						"ZNear": 0.1001,
+						"ZNear": 0.1,
 						"ZoomFactor": 1.2722
 					}
 				}
@@ -512,9 +648,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -2.5209,
+							"x": -2.521,
 							"y": 0.0,
 							"z": -20.7917
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -528,9 +669,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": 45.7874,
+							"x": 22.0822,
 							"y": 0.0,
-							"z": 3.9736
+							"z": 3.4306
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -544,9 +690,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -19.899,
+							"x": -49.6688,
 							"y": 0.0,
-							"z": 3.9736
+							"z": 4.2442
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -560,9 +711,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -90.5525,
+							"x": -94.4787,
 							"y": 0.0,
-							"z": 3.9736
+							"z": 4.1543
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -576,9 +732,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -153.7102,
+							"x": -125.9307,
 							"y": 0.0,
-							"z": 3.9736
+							"z": 4.213
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -592,9 +753,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": 122.8928,
+							"x": 122.8927,
 							"y": 0.0,
-							"z": 3.9736
+							"z": 3.9735
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
@@ -608,24 +774,156 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -3.4783,
-							"y": 0.1941,
+							"x": -3.4784,
+							"y": 0.194,
 							"z": -2.8125
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
 						}
 					},
 					"Object": {
 						"Geometry": "assets/seville_city/police_car.geo"
 					}
 				}
+			},
+			"Node": {
+				"Uid": 38,
+				"Name": "telegraph_pole005",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -127.6444,
+							"y": 0.0,
+							"z": 11.971
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/telegraph_pole005.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 39,
+				"Name": "telegraph_pole006",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 78.7108,
+							"y": 0.0,
+							"z": 3.9703
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/telegraph_pole006.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 40,
+				"Name": "house_029",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -7.1928,
+							"y": 0.0,
+							"z": -27.1625
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": -1.5707,
+							"z": 0.0001
+						},
+						"Scale": {
+							"x": 1.0,
+							"y": 1.0,
+							"z": 2.0832
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_029.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 41,
+				"Name": "house_030",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -29.4092,
+							"y": 0.0,
+							"z": -33.859
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_030.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 42,
+				"Name": "house_031",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -19.133,
+							"y": 0.0,
+							"z": -44.4447
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/house_031.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 43,
+				"Name": "maibox",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 0.6016,
+							"y": 0.0,
+							"z": -5.0331
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/maibox.geo"
+					}
+				}
 			}
 		},
 		"NodeHierarchy": {},
 		"Skeletons": {},
-		"State": {
-			"CurrentCamera": {
-				"Uid": 30
-			}
-		},
+		"State": {},
 		"Takes": {
 			"Take": {
 				"Name": "Take 001",

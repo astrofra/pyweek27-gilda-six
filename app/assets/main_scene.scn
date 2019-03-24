@@ -4,18 +4,18 @@
 			"Environment": {
 				"AmbientColor": {
 					"b": 0.1416,
-					"g": 0.0991,
-					"r": 0.0614
+					"g": 0.0992,
+					"r": 0.0615
 				},
 				"BackgroundColor": {
-					"b": 0.3009,
+					"b": 0.301,
 					"g": 0.1769,
-					"r": 0.1212
+					"r": 0.1213
 				},
 				"FogColor": {
-					"b": 0.3009,
+					"b": 0.301,
 					"g": 0.1769,
-					"r": 0.1212
+					"r": 0.1213
 				},
 				"FogFar": 200.0,
 				"FogNear": 100.0
@@ -29,14 +29,14 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -22.3546,
-							"y": 14.3081,
-							"z": -27.9989
+							"x": -6.5608,
+							"y": 13.9473,
+							"z": 15.1094
 						},
 						"Rotation": {
-							"x": 0.2827,
-							"y": 0.9646,
-							"z": -0.0
+							"x": 0.6728,
+							"y": 2.8553,
+							"z": 0.0
 						},
 						"Scale": {
 							"x": 1.0,
@@ -46,7 +46,7 @@
 					},
 					"Camera": {
 						"ZFar": 50000.0,
-						"ZNear": 0.1001
+						"ZNear": 0.1002
 					}
 				}
 			},
@@ -58,7 +58,7 @@
 						"Position": {
 							"x": -7.057,
 							"y": 7.3668,
-							"z": -1.703
+							"z": -1.7029
 						},
 						"Rotation": {
 							"x": 1.5708,
@@ -80,6 +80,47 @@
 					"Transform": {},
 					"Instance": {
 						"Path": "assets/seville_city/seville_city.scn"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 4,
+				"Name": "Light",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 0.0,
+							"y": 5.1228,
+							"z": 0.0
+						},
+						"Rotation": {
+							"x": 0.4681,
+							"y": 0.8702,
+							"z": 0.4912
+						},
+						"Scale": {
+							"x": 1.0,
+							"y": 1.0,
+							"z": 1.0
+						}
+					},
+					"Light": {
+						"Model": "Linear",
+						"Shadow": "ShadowMap",
+						"ShadowRange": 150.0
+					}
+				}
+			},
+			"Node": {
+				"Uid": 5,
+				"Name": "spawn_point",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 0.0,
+							"y": 3.9928,
+							"z": 0.0
+						}
 					}
 				}
 			}

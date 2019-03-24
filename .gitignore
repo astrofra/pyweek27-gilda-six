@@ -1,0 +1,8 @@
+/app/__pycache__/*.pyc
+codeStyleConfig.xml
+/.idea/encodings.xml
+git_pyweek27-gilda-six.iml
+misc.xml
+modules.xml
+vcs.xml
+workspace.xml
