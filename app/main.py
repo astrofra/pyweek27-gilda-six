@@ -4,7 +4,7 @@
 
 import harfang as hg
 import game_globals as gg
-from math import sin, cos, pi
+from math import sin, cos, pi, radians, degrees
 
 
 def GameCreateCamera():
@@ -14,7 +14,30 @@ def GameCreateCamera():
 	gg.camera.GetTransform().SetPosition(gg.spawn_point.GetTransform().GetPosition())
 	gg.camera.GetTransform().SetRotation(gg.camera_angle)
 	gg.scene.SetCurrentCamera(gg.camera)
+	gg.camera_target_angle = hg.Vector3(gg.camera_angle)
 
+
+def GameControlCamera(dt):
+	mouse_device = hg.GetInputSystem().GetDevice("mouse")
+	if mouse_device.IsButtonDown(hg.Button0):
+
+		gg.mouse = hg.Vector2(mouse_device.GetValue(hg.InputAxisX), mouse_device.GetValue(hg.InputAxisY))
+		mouse_speed = gg.prev_mouse - gg.mouse
+		gg.prev_mouse = hg.Vector2(gg.mouse)
+		print("Mouse X: %f, Mouse Y: %f" % (mouse_speed.x, mouse_speed.y))
+
+		gg.camera_target_angle.y += radians(mouse_speed.x * hg.time_to_sec_f(dt) * gg.camera_rot_y_speed)
+	else:
+		gg.mouse = hg.Vector2(mouse_device.GetValue(hg.InputAxisX), mouse_device.GetValue(hg.InputAxisY))
+		gg.prev_mouse = hg.Vector2(gg.mouse)
+
+	cam_dt = gg.camera_target_angle - gg.camera_angle
+	if gg.camera_lazyness == 0:
+		cam_dt *= hg.time_to_sec_f(dt)
+	else:
+		cam_dt *= hg.time_to_sec_f(dt) * (1.0 / gg.camera_lazyness)
+	gg.camera_angle += cam_dt
+	gg.camera.GetTransform().SetRotation(gg.camera_angle)
 
 hg.LoadPlugins()
 
@@ -33,6 +56,7 @@ GameCreateCamera()
 
 while not plus.IsAppEnded():
 	dt = plus.UpdateClock()
+	GameControlCamera(dt)
 	plus.UpdateScene(gg.scene, dt)
 
 	plus.Flip()
