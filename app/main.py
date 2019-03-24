@@ -10,10 +10,19 @@ from math import sin, cos, pi, radians, degrees
 def GameCreateCamera():
 	gg.camera_angle = hg.Vector3(0.0, pi/2.0, 0.0)
 	gg.spawn_point = gg.scene.GetNode("spawn_point")
+	# camera Y controller
+	gg.camera_y_controller = plus.AddDummy(gg.scene)
+	gg.camera_y_controller.SetName("camera_y_controller")
+	gg.camera_y_controller.GetTransform().SetPosition(gg.spawn_point.GetTransform().GetPosition())
+	gg.camera_y_controller.GetTransform().SetRotation(gg.camera_angle * hg.Vector3(0.0, 1.0, 0.0))
+
+	# camera
 	gg.camera = plus.AddCamera(gg.scene)
-	gg.camera.GetTransform().SetPosition(gg.spawn_point.GetTransform().GetPosition())
-	gg.camera.GetTransform().SetRotation(gg.camera_angle)
+	gg.camera.SetName("game_camera")
+	gg.camera.GetTransform().SetParent(gg.camera_y_controller)
+	gg.camera.GetTransform().SetRotation(gg.camera_angle * hg.Vector3(1.0, 0.0, 0.0))
 	gg.scene.SetCurrentCamera(gg.camera)
+
 	gg.camera_target_angle = hg.Vector3(gg.camera_angle)
 
 
@@ -26,6 +35,8 @@ def GameControlCamera(dt):
 		gg.prev_mouse = hg.Vector2(gg.mouse)
 		print("Mouse X: %f, Mouse Y: %f" % (mouse_speed.x, mouse_speed.y))
 
+		gg.camera_target_angle.x -= radians(mouse_speed.y * hg.time_to_sec_f(dt) * gg.camera_rot_x_speed)
+		gg.camera_target_angle.x = max(min(gg.camera_target_angle.x, gg.camera_rot_x_min_max.y), gg.camera_rot_x_min_max.x)
 		gg.camera_target_angle.y += radians(mouse_speed.x * hg.time_to_sec_f(dt) * gg.camera_rot_y_speed)
 	else:
 		gg.mouse = hg.Vector2(mouse_device.GetValue(hg.InputAxisX), mouse_device.GetValue(hg.InputAxisY))
@@ -37,7 +48,8 @@ def GameControlCamera(dt):
 	else:
 		cam_dt *= hg.time_to_sec_f(dt) * (1.0 / gg.camera_lazyness)
 	gg.camera_angle += cam_dt
-	gg.camera.GetTransform().SetRotation(gg.camera_angle)
+	gg.camera.GetTransform().SetRotation(gg.camera_angle * hg.Vector3(1.0, 0.0, 0.0))
+	gg.camera_y_controller.GetTransform().SetRotation(gg.camera_angle * hg.Vector3(0.0, 1.0, 0.0))
 
 hg.LoadPlugins()
 
