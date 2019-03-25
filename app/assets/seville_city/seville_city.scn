@@ -770,27 +770,6 @@
 			},
 			"Node": {
 				"Uid": 37,
-				"Name": "police_car",
-				"Components": {
-					"Transform": {
-						"Position": {
-							"x": -3.4784,
-							"y": 0.194,
-							"z": -2.8125
-						},
-						"Rotation": {
-							"x": -0.0,
-							"y": 0.0,
-							"z": 0.0
-						}
-					},
-					"Object": {
-						"Geometry": "assets/seville_city/police_car.geo"
-					}
-				}
-			},
-			"Node": {
-				"Uid": 38,
 				"Name": "telegraph_pole005",
 				"Components": {
 					"Transform": {
@@ -811,7 +790,7 @@
 				}
 			},
 			"Node": {
-				"Uid": 39,
+				"Uid": 38,
 				"Name": "telegraph_pole006",
 				"Components": {
 					"Transform": {
@@ -832,7 +811,7 @@
 				}
 			},
 			"Node": {
-				"Uid": 40,
+				"Uid": 39,
 				"Name": "house_029",
 				"Components": {
 					"Transform": {
@@ -858,7 +837,7 @@
 				}
 			},
 			"Node": {
-				"Uid": 41,
+				"Uid": 40,
 				"Name": "house_030",
 				"Components": {
 					"Transform": {
@@ -879,7 +858,7 @@
 				}
 			},
 			"Node": {
-				"Uid": 42,
+				"Uid": 41,
 				"Name": "house_031",
 				"Components": {
 					"Transform": {
@@ -900,28 +879,84 @@
 				}
 			},
 			"Node": {
-				"Uid": 43,
-				"Name": "maibox",
+				"Uid": 42,
+				"Name": "mailbox",
 				"Components": {
 					"Transform": {
 						"Position": {
 							"x": 0.6016,
-							"y": 0.0,
+							"y": -0.0348,
 							"z": -5.0331
 						},
 						"Rotation": {
-							"x": -0.0,
-							"y": 0.0,
-							"z": 0.0
+							"x": -1.5707,
+							"y": 0.0001,
+							"z": 3.1416
+						},
+						"Scale": {
+							"x": 0.7869,
+							"y": 0.7869,
+							"z": 0.7869
 						}
 					},
 					"Object": {
-						"Geometry": "assets/seville_city/maibox.geo"
+						"Geometry": "assets/seville_city/mailbox.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 43,
+				"Name": "Object001",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -0.0,
+							"y": 0.4787,
+							"z": 0.9949
+						},
+						"Rotation": {
+							"x": -1.5707,
+							"y": 1.4794,
+							"z": 1.6623
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/Object001.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 44,
+				"Name": "mailbox_flag",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 0.353,
+							"y": 0.2936,
+							"z": 1.2237
+						},
+						"Rotation": {
+							"x": -1.5707,
+							"y": 1.4794,
+							"z": 1.6623
+						}
+					},
+					"Object": {
+						"Geometry": "assets/seville_city/mailbox_flag.geo"
 					}
 				}
 			}
 		},
-		"NodeHierarchy": {},
+		"NodeHierarchy": {
+			"Link": {
+				"Node": 43,
+				"Parent": 42
+			},
+			"Link": {
+				"Node": 44,
+				"Parent": 42
+			}
+		},
 		"Skeletons": {},
 		"State": {},
 		"Takes": {

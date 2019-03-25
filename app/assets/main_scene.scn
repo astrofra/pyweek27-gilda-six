@@ -4,8 +4,8 @@
 			"Environment": {
 				"AmbientColor": {
 					"b": 0.1416,
-					"g": 0.0992,
-					"r": 0.0615
+					"g": 0.0993,
+					"r": 0.0616
 				},
 				"BackgroundColor": {
 					"b": 0.301,
@@ -29,13 +29,13 @@
 				"Components": {
 					"Transform": {
 						"Position": {
-							"x": -6.5608,
-							"y": 13.9473,
-							"z": 15.1094
+							"x": -12.6026,
+							"y": 33.6819,
+							"z": 9.6079
 						},
 						"Rotation": {
-							"x": 0.6728,
-							"y": 2.8553,
+							"x": 0.4007,
+							"y": -1.9101,
 							"z": 0.0
 						},
 						"Scale": {
@@ -52,6 +52,7 @@
 			},
 			"Node": {
 				"Uid": 2,
+				"Enabled": false,
 				"Name": "Light",
 				"Components": {
 					"Transform": {
@@ -75,7 +76,7 @@
 			},
 			"Node": {
 				"Uid": 3,
-				"Name": "Instance",
+				"Name": "Instance_city",
 				"Components": {
 					"Transform": {},
 					"Instance": {
@@ -94,19 +95,18 @@
 							"z": 0.0
 						},
 						"Rotation": {
-							"x": 0.4681,
+							"x": 0.4682,
 							"y": 0.8702,
-							"z": 0.4912
-						},
-						"Scale": {
-							"x": 1.0,
-							"y": 1.0,
-							"z": 1.0
+							"z": 0.4913
 						}
 					},
 					"Light": {
+						"DiffuseColor": {
+							"b": 0.4558,
+							"g": 0.3227,
+							"r": 0.3235
+						},
 						"Model": "Linear",
-						"Shadow": "ShadowMap",
 						"ShadowRange": 150.0
 					}
 				}
@@ -123,9 +123,356 @@
 						}
 					}
 				}
+			},
+			"Node": {
+				"Uid": 6,
+				"Name": "Instance_traffic_light",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -87.2338,
+							"y": -0.0,
+							"z": 6.4507
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 1.5708,
+							"z": 0.0
+						}
+					},
+					"Instance": {
+						"Path": "assets/traffic_light/traffic_light.scn"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 7,
+				"Name": "Instance_police_car",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 2.7008,
+							"y": -0.0,
+							"z": -4.8481
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": -0.5018,
+							"z": 0.0
+						}
+					},
+					"Instance": {
+						"Path": "assets/police_car/police_car.scn"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 8,
+				"Name": "police_car_light",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 0.0,
+							"y": 3.8056,
+							"z": -0.4872
+						},
+						"Rotation": {
+							"x": 1.5708,
+							"y": 0.0002,
+							"z": 0.0002
+						}
+					},
+					"Light": {
+						"DiffuseColor": {
+							"b": 0.1608,
+							"g": 0.0,
+							"r": 1.0
+						},
+						"EdgeAngle": 0.0176,
+						"Model": "Spot",
+						"Shadow": "ShadowMap",
+						"ShadowRange": 0.0,
+						"SpecularColor": {
+							"b": 0.1608,
+							"g": 0.0,
+							"r": 1.0
+						}
+					}
+				}
+			},
+			"Node": {
+				"Uid": 9,
+				"Name": "shadow_occluder",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 0.0,
+							"y": 0.1817,
+							"z": -0.1947
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0001,
+							"z": 0.0
+						},
+						"Scale": {
+							"x": 1.0767,
+							"y": 0.0958,
+							"z": 2.573
+						}
+					},
+					"LogicScript": {
+						"Script": {
+							"Parameters": {
+								"Parameter": {
+									"Name": "width",
+									"Type": "Int",
+									"Value": 1
+								},
+								"Parameter": {
+									"Name": "height",
+									"Type": "Int",
+									"Value": 1
+								},
+								"Parameter": {
+									"Name": "length",
+									"Type": "Int",
+									"Value": 1
+								},
+								"Parameter": {
+									"Name": "smoothing_angle",
+									"Type": "Float",
+									"Value": 40.0
+								},
+								"Parameter": {
+									"Name": "material",
+									"Type": "std::shared_ptr<RenderMaterial>",
+									"Value": "@core/materials/default.mat"
+								}
+							},
+							"Path": "@core/lua/cube.lua"
+						}
+					}
+				}
+			},
+			"Node": {
+				"Uid": 10,
+				"Name": "shadow_occluder",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -0.0,
+							"y": 0.2392,
+							"z": -0.7842
+						},
+						"Rotation": {
+							"x": -0.0,
+							"y": 0.0001,
+							"z": 0.0
+						},
+						"Scale": {
+							"x": 1.1295,
+							"y": 0.0958,
+							"z": 1.6893
+						}
+					},
+					"LogicScript": {
+						"Script": {
+							"Parameters": {
+								"Parameter": {
+									"Name": "width",
+									"Type": "Int",
+									"Value": 1
+								},
+								"Parameter": {
+									"Name": "height",
+									"Type": "Int",
+									"Value": 1
+								},
+								"Parameter": {
+									"Name": "length",
+									"Type": "Int",
+									"Value": 1
+								},
+								"Parameter": {
+									"Name": "smoothing_angle",
+									"Type": "Float",
+									"Value": 40.0
+								},
+								"Parameter": {
+									"Name": "material",
+									"Type": "std::shared_ptr<RenderMaterial>",
+									"Value": "@core/materials/default.mat"
+								}
+							},
+							"Path": "@core/lua/cube.lua"
+						}
+					}
+				}
+			},
+			"Node": {
+				"Uid": 59,
+				"Name": "police_car_light",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 0.0001,
+							"y": 1.5037,
+							"z": -1.1593
+						},
+						"Rotation": {
+							"x": 0.3209,
+							"y": 3.1416,
+							"z": -3.1415
+						},
+						"Scale": {
+							"x": 1.0,
+							"y": 1.0,
+							"z": 1.0
+						}
+					},
+					"Light": {
+						"ConeAngle": 0.3491,
+						"DiffuseColor": {
+							"b": 0.0,
+							"g": 0.6372,
+							"r": 1.0
+						},
+						"DiffuseIntensity": 2.0,
+						"EdgeAngle": 0.0176,
+						"Model": "Spot",
+						"Range": 20.0,
+						"ShadowRange": 0.0,
+						"SpecularColor": {
+							"b": 0.0,
+							"g": 0.6372,
+							"r": 1.0
+						},
+						"SpecularIntensity": 2.0
+					}
+				}
+			},
+			"Node": {
+				"Uid": 60,
+				"Name": "house_light",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -2.3451,
+							"y": 11.0155,
+							"z": -17.5532
+						},
+						"Rotation": {
+							"x": 1.3632,
+							"y": -3.1415,
+							"z": -3.1415
+						}
+					},
+					"Light": {
+						"DiffuseColor": {
+							"b": 0.0,
+							"g": 0.6372,
+							"r": 1.0
+						},
+						"EdgeAngle": 0.0175,
+						"Model": "Spot",
+						"Shadow": "ShadowMap",
+						"ShadowRange": 0.0,
+						"SpecularColor": {
+							"b": 0.0,
+							"g": 0.6372,
+							"r": 1.0
+						}
+					}
+				}
+			},
+			"Node": {
+				"Uid": 61,
+				"Name": "house_light",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -24.6593,
+							"y": 18.734,
+							"z": -27.3699
+						},
+						"Rotation": {
+							"x": 1.3632,
+							"y": -3.1414,
+							"z": -3.1414
+						}
+					},
+					"Light": {
+						"DiffuseColor": {
+							"b": 0.0,
+							"g": 0.6372,
+							"r": 1.0
+						},
+						"EdgeAngle": 0.0176,
+						"Model": "Spot",
+						"Shadow": "ShadowMap",
+						"ShadowRange": 0.0,
+						"SpecularColor": {
+							"b": 0.0,
+							"g": 0.6372,
+							"r": 1.0
+						}
+					}
+				}
+			},
+			"Node": {
+				"Uid": 62,
+				"Name": "house_light",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -88.9535,
+							"y": 19.3079,
+							"z": 9.0157
+						},
+						"Rotation": {
+							"x": 1.3632,
+							"y": -3.1414,
+							"z": -3.1414
+						}
+					},
+					"Light": {
+						"DiffuseColor": {
+							"b": 0.0,
+							"g": 0.6372,
+							"r": 1.0
+						},
+						"EdgeAngle": 0.0176,
+						"Model": "Spot",
+						"Shadow": "ShadowMap",
+						"ShadowRange": 0.0,
+						"SpecularColor": {
+							"b": 0.0,
+							"g": 0.6372,
+							"r": 1.0
+						}
+					}
+				}
 			}
 		},
-		"NodeHierarchy": {},
+		"NodeHierarchy": {
+			"Link": {
+				"Node": 8,
+				"Parent": 7
+			},
+			"Link": {
+				"Node": 9,
+				"Parent": 7
+			},
+			"Link": {
+				"Node": 10,
+				"Parent": 7
+			},
+			"Link": {
+				"Node": 59,
+				"Parent": 7
+			}
+		},
 		"Skeletons": {},
 		"State": {
 			"CurrentCamera": {

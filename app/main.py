@@ -28,8 +28,14 @@ def GameCreateCamera():
 
 def GameControlCamera(dt):
 	mouse_device = hg.GetInputSystem().GetDevice("mouse")
-	if mouse_device.IsButtonDown(hg.Button0):
 
+	mouse_wheel = mouse_device.GetValue(hg.InputRotY)
+	if mouse_wheel != 0.0:
+		gg.camera_zoom_target += gg.zoom_speed * hg.time_to_sec_f(dt) * mouse_wheel
+		gg.camera_zoom_target = max(min(gg.camera_zoom_target, gg.zoom_min_max.y), gg.zoom_min_max.x)
+		print(gg.camera_zoom_target)
+
+	if mouse_device.IsButtonDown(hg.Button0):
 		gg.mouse = hg.Vector2(mouse_device.GetValue(hg.InputAxisX), mouse_device.GetValue(hg.InputAxisY))
 		mouse_speed = gg.prev_mouse - gg.mouse
 		gg.prev_mouse = hg.Vector2(gg.mouse)
@@ -43,13 +49,22 @@ def GameControlCamera(dt):
 		gg.prev_mouse = hg.Vector2(gg.mouse)
 
 	cam_dt = gg.camera_target_angle - gg.camera_angle
+	zoom_dt = gg.camera_zoom_target - gg.camera_zoom
+
 	if gg.camera_lazyness == 0:
 		cam_dt *= hg.time_to_sec_f(dt)
+		zoom_dt *= hg.time_to_sec_f(dt)
 	else:
 		cam_dt *= hg.time_to_sec_f(dt) * (1.0 / gg.camera_lazyness)
+		zoom_dt *= hg.time_to_sec_f(dt) * (1.0 / gg.camera_lazyness)
+
 	gg.camera_angle += cam_dt
 	gg.camera.GetTransform().SetRotation(gg.camera_angle * hg.Vector3(1.0, 0.0, 0.0))
 	gg.camera_y_controller.GetTransform().SetRotation(gg.camera_angle * hg.Vector3(0.0, 1.0, 0.0))
+
+	gg.camera_zoom += zoom_dt
+	gg.camera.GetCamera().SetZoomFactor(gg.camera_zoom)
+
 
 
 def GameDrawCross(p):
@@ -63,6 +78,7 @@ hg.LoadPlugins()
 plus = hg.GetPlus()
 plus.RenderInit(gg.width, gg.height, 4, hg.Windowed)
 plus.SetWindowTitle("Gilda Six, Private Investigator")
+# plus.GetRenderSystem().SetShadowMapsResolution(2048)
 
 hg.MountFileDriver(hg.StdFileDriver("./"))
 

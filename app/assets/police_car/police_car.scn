@@ -1,0 +1,106 @@
+{
+	"Scene": {
+		"Components": {
+			"Environment": {
+				"FogColor": {
+					"b": 1.0,
+					"g": 1.0,
+					"r": 1.0
+				}
+			}
+		},
+		"Nodes": {
+			"Node": {
+				"Uid": 1,
+				"Name": "Mesh",
+				"Components": {
+					"Transform": {
+						"Rotation": {
+							"x": -1.5707,
+							"y": 3.1416,
+							"z": 3.1416
+						},
+						"Scale": {
+							"x": 0.01,
+							"y": 0.01,
+							"z": 0.01
+						}
+					},
+					"Object": {
+						"Geometry": "assets/police_car/Mesh.geo"
+					}
+				}
+			},
+			"Node": {
+				"Uid": 2,
+				"Name": "Camera",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": 0.0,
+							"y": 0.75,
+							"z": -4.0
+						},
+						"Rotation": {
+							"x": 0.0873,
+							"y": 0.0,
+							"z": 0.0
+						}
+					},
+					"Camera": {
+						"ZFar": 40.0,
+						"ZNear": 0.1001,
+						"ZoomFactor": 3.7038
+					}
+				}
+			},
+			"Node": {
+				"Uid": 3,
+				"Name": "Directional Light",
+				"Components": {
+					"Transform": {
+						"Position": {
+							"x": -2.0,
+							"y": 2.0,
+							"z": -2.0
+						},
+						"Rotation": {
+							"x": 0.5236,
+							"y": 0.7854,
+							"z": 0.0001
+						},
+						"Scale": {
+							"x": 0.0101,
+							"y": 0.0101,
+							"z": 0.01
+						}
+					},
+					"Light": {
+						"ConeAngle": 0.0,
+						"DiffuseIntensity": 1.2001,
+						"EdgeAngle": 0.7854,
+						"Model": "Linear",
+						"ShadowRange": 0.0,
+						"SpecularColor": {
+							"b": 1.0,
+							"g": 1.0,
+							"r": 1.0
+						},
+						"SpecularIntensity": 1.2001
+					}
+				}
+			}
+		},
+		"NodeHierarchy": {},
+		"Skeletons": {},
+		"State": {},
+		"Takes": {
+			"Take": {
+				"Name": "Take 001",
+				"Start": 0,
+				"End": 3333,
+				"Animations": {}
+			}
+		}
+	}
+}

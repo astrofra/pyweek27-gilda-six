@@ -1,0 +1,47 @@
+{
+	"Scene": {
+		"Components": {
+			"Environment": {
+				"FogColor": {
+					"b": 1.0,
+					"g": 1.0,
+					"r": 1.0
+				}
+			}
+		},
+		"Nodes": {
+			"Node": {
+				"Uid": 1,
+				"Name": "Mesh (2)",
+				"Components": {
+					"Transform": {
+						"Rotation": {
+							"x": -1.5707,
+							"y": 3.1416,
+							"z": 3.1416
+						},
+						"Scale": {
+							"x": 0.01,
+							"y": 0.01,
+							"z": 0.01
+						}
+					},
+					"Object": {
+						"Geometry": "assets/traffic_light/Mesh (2).geo"
+					}
+				}
+			}
+		},
+		"NodeHierarchy": {},
+		"Skeletons": {},
+		"State": {},
+		"Takes": {
+			"Take": {
+				"Name": "Take 001",
+				"Start": 0,
+				"End": 3333,
+				"Animations": {}
+			}
+		}
+	}
+}
