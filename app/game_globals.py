@@ -6,6 +6,8 @@ width, height = int(1280 * scale), int(720 * scale)
 scene = None
 spawn_point = None
 
+osd = None
+
 camera_y_controller = None
 camera = None
 camera_angle = None

@@ -33,7 +33,7 @@ def GameControlCamera(dt):
 		gg.mouse = hg.Vector2(mouse_device.GetValue(hg.InputAxisX), mouse_device.GetValue(hg.InputAxisY))
 		mouse_speed = gg.prev_mouse - gg.mouse
 		gg.prev_mouse = hg.Vector2(gg.mouse)
-		print("Mouse X: %f, Mouse Y: %f" % (mouse_speed.x, mouse_speed.y))
+		# print("Mouse X: %f, Mouse Y: %f" % (mouse_speed.x, mouse_speed.y))
 
 		gg.camera_target_angle.x -= radians(mouse_speed.y * hg.time_to_sec_f(dt) * gg.camera_rot_x_speed)
 		gg.camera_target_angle.x = max(min(gg.camera_target_angle.x, gg.camera_rot_x_min_max.y), gg.camera_rot_x_min_max.x)
@@ -51,6 +51,13 @@ def GameControlCamera(dt):
 	gg.camera.GetTransform().SetRotation(gg.camera_angle * hg.Vector3(1.0, 0.0, 0.0))
 	gg.camera_y_controller.GetTransform().SetRotation(gg.camera_angle * hg.Vector3(0.0, 1.0, 0.0))
 
+
+def GameDrawCross(p):
+	w = 0.5
+	gg.osd.Line(p.x - w, p.y, p.z, p.x + w, p.y, p.z, hg.Color.Yellow, hg.Color.Yellow)
+	gg.osd.Line(p.x, p.y - w, p.z, p.x, p.y + w, p.z, hg.Color.Yellow, hg.Color.Yellow)
+	gg.osd.Line(p.x, p.y, p.z - w, p.x, p.y, p.z + w, hg.Color.Yellow, hg.Color.Yellow)
+
 hg.LoadPlugins()
 
 plus = hg.GetPlus()
@@ -64,12 +71,25 @@ plus.LoadScene(gg.scene, "assets/main_scene.scn")
 
 gg.scene.UpdateAndCommitWaitAll()
 
+gg.osd = hg.SimpleGraphicSceneOverlay(False)
+gg.scene.AddComponent(gg.osd)
+
 GameCreateCamera()
+
+picker = hg.ScenePicking(plus.GetRenderSystem())
 
 while not plus.IsAppEnded():
 	dt = plus.UpdateClock()
 	GameControlCamera(dt)
 	plus.UpdateScene(gg.scene, dt)
+
+	if picker.Prepare(gg.scene, False, True).get():
+		mx, my = plus.GetMousePos()
+		my = gg.height - my
+		if plus.MouseButtonDown(hg.Button0):
+			result, p = picker.PickWorld(gg.scene, mx, my)
+			GameDrawCross(p)
+			# print(start)
 
 	plus.Flip()
 	plus.EndFrame()
