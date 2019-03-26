@@ -4,7 +4,11 @@
 
 import harfang as hg
 import game_globals as gg
+import game_objects as go
 from math import sin, cos, pi, radians, degrees
+
+
+# Camera/mouse interaction #############################################################################################
 
 
 def GameCreateCamera():
@@ -66,12 +70,21 @@ def GameControlCamera(dt):
 	gg.camera.GetCamera().SetZoomFactor(gg.camera_zoom)
 
 
-
 def GameDrawCross(p):
 	w = 0.5
 	gg.osd.Line(p.x - w, p.y, p.z, p.x + w, p.y, p.z, hg.Color.Yellow, hg.Color.Yellow)
 	gg.osd.Line(p.x, p.y - w, p.z, p.x, p.y + w, p.z, hg.Color.Yellow, hg.Color.Yellow)
 	gg.osd.Line(p.x, p.y, p.z - w, p.x, p.y, p.z + w, hg.Color.Yellow, hg.Color.Yellow)
+
+
+# Game objects #########################################################################################################
+
+
+def CreateGameObjects():
+	for obj in go.game_objects:
+		print(go.game_objects[obj]["name"])
+
+# Renderer initialization ##############################################################################################
 
 hg.LoadPlugins()
 
@@ -89,6 +102,8 @@ gg.scene.UpdateAndCommitWaitAll()
 
 gg.osd = hg.SimpleGraphicSceneOverlay(False)
 gg.scene.AddComponent(gg.osd)
+
+CreateGameObjects()
 
 GameCreateCamera()
 
