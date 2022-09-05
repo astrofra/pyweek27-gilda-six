@@ -9,3 +9,5 @@ Gilda Six, private investigator, will dive into this mystery.<br>
 _unfinished project_
 
 See the [devlog here](https://pyweek.org/e/Gilda-Six/)
+
+![](img/gilda-six-preview_1_gif.gif)
