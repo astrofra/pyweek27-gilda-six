@@ -1,1 +1,1 @@
-harfang
+harfang=1.2.0
