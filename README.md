@@ -1,3 +1,5 @@
+<img src="https://pyweek.org/static/pyweek-new.png" align="right" width="200"/>
+
 # Gilda Six
 
 ## Game entry for the PyWeek 27
